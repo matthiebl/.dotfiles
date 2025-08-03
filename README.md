@@ -50,6 +50,18 @@ Install Powerlevel10k and the [Meslo Nerd font](https://github.com/romkatv/power
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 ```
 
+### Setup symlinks
+
+If you have some of the existing files, you should store backups of them. For example
+```zsh
+mv ~/.zshrc ~/.zshrc.bak
+```
+
+```zsh
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
+```
+
 ## Other
 
 ```
