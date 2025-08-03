@@ -22,7 +22,7 @@ cat ~/.ssh/id_ed25519.pub
 
 4. Clone the dotfiles repo
 ```zsh
-git clone git@github.com:matthiebl/.dotfiles ~/.dotfiles
+git clone git@github.com:matthiebl/.dotfiles.git ~/.dotfiles
 ```
 
 5. Install Brew and Brew dependencies
@@ -34,11 +34,23 @@ git clone git@github.com:matthiebl/.dotfiles ~/.dotfiles
 
 I plan to setup the following with an automated install, but have not gotten around to it yet.
 
-```
+```zsh
 brew install --cask iterm2
 brew install tmux
 brew install neovim
 ```
+
+Install ohmyzsh
+```zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Install Powerlevel10k and the [Meslo Nerd font](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#meslo-nerd-font-patched-for-powerlevel10k)
+```zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+```
+
+## Other
 
 ```
 brew install choose-gui
