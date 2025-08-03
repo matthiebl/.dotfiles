@@ -60,7 +60,13 @@ mv ~/.zshrc ~/.zshrc.bak
 ```zsh
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.gitignore ~/.gitignore
 ```
+
+For your `~/.zshrc` you can add extra config and aliases in `~/.zshrc-config` and `~/.zsh-alias`
+respectively. This way you can add extra local zshrc features that may not make sense to include
+across all devices.
 
 ## Other
 

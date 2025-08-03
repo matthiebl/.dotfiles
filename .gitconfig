@@ -1,0 +1,6 @@
+[user]
+	name = Matt Hiebl
+	email = 87024986+matthiebl@users.noreply.github.com
+[core]
+	excludesfile = /Users/matt/.gitignore
+	editor = nvim
