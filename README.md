@@ -30,3 +30,17 @@ git clone git@github.com:matthiebl/.dotfiles ~/.dotfiles
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+## Install
+
+I plan to setup the following with an automated install, but have not gotten around to it yet.
+
+```
+brew install --cask iterm2
+brew install tmux
+brew install neovim
+```
+
+```
+brew install choose-gui
+```
+
