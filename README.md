@@ -30,6 +30,12 @@ git clone git@github.com:matthiebl/.dotfiles.git ~/.dotfiles
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+6. Set git configs
+```zsh
+git config user.name "Matt Hiebl"
+git config core.editor "nvim"
+```
+
 ## Install
 
 I plan to setup the following with an automated install, but have not gotten around to it yet.
@@ -50,6 +56,11 @@ Install Powerlevel10k and the [Meslo Nerd font](https://github.com/romkatv/power
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 ```
 
+Install tmux plugin manager
+```zsh
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
 ### Setup symlinks
 
 If you have some of the existing files, you should store backups of them. For example
@@ -60,8 +71,7 @@ mv ~/.zshrc ~/.zshrc.bak
 ```zsh
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/.gitignore ~/.gitignore
+ln -s ~/.dotfiles/.config/tmux/tmux.conf ~/.config/tmux/tmux.conf
 ```
 
 For your `~/.zshrc` you can add extra config and aliases in `~/.zshrc-config` and `~/.zsh-alias`
