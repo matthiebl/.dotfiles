@@ -64,6 +64,6 @@ alias py3="python3 -m"
 
 # ----- PATH Update -----
 
-LOCAL_BIN = "$HOME/.local/bin"
+LOCAL_BIN="$HOME/.local/bin"
 export PATH="$PATH:$LOCAL_BIN"
 
