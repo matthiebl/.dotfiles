@@ -61,6 +61,11 @@ Install tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
+Install NvChad
+```zsh
+git clone --depth 1 https://github.com/NvChad/starter ~/.dotfiles/.config/nvim && rm -rf ~/.dotfiles/.config/nvim/.git
+``` 
+
 ### Setup symlinks
 
 If you have some of the existing files, you should store backups of them. For example
@@ -71,7 +76,8 @@ mv ~/.zshrc ~/.zshrc.bak
 ```zsh
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
-ln -s ~/.dotfiles/.config/tmux/tmux.conf ~/.config/tmux/tmux.conf
+ln -s ~/.dotfiles/.config/tmux/tmux.conf ~/.config/tmux/tmux.conf # mkdir ~/.config/tmux if needed
+ln -s ~/.dotfiles/.config/nvim ~/.config/nvim # backup and delete ~/.config/nvim first
 ```
 
 For your `~/.zshrc` you can add extra config and aliases in `~/.zshrc-config` and `~/.zsh-alias`
