@@ -52,6 +52,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # --- Aliases ---
 
+# nvim
+alias vim="nvim"
+
 # git
 alias glgs="git log --pretty=format:'%C(yellow)%h%C(reset) -%C(green)%d %C(blue)<%an> %C(reset)%s %C(magenta)(%cr)%C(reset)'"
 
